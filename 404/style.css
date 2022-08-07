@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    /* border: 2px solid black; */
+    /* height: 100vh; */
+}
+
+header {
+    font-family: "Inconsolata";
+    font-weight: 700;
+    font-size: 24px;
+    top: 40px;
+    left: 77px;
+    position: absolute;
+}
+
+.sub-container {
+    height: 95%;
+    /* border: 2px solid orange; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+    margin-top: 90px;
+}
+
+.img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.img-container>img {
+    width: 539.22px;
+    height: 447.43px;
+}
+
+.right__header {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 64px;
+    line-height: 94.78px;
+    color: #333333;
+    font-family: "monospace";
+}
+
+.sub__heading {
+    font-family: "monospace";
+    margin-top: 36px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35.54px;
+    color: #4f4f4f;
+}
+
+.button__container {
+    font-weight: 700;
+    padding: 16px 23px;
+    font-size: 14px;
+    line-height: 20.73px;
+    background: #333333;
+    color: white;
+    margin-top: 64px;
+}
+
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer {
+    width: fit-content;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .img-container>img {
+        width: 339.22px;
+        height: 247.43px;
+    }
+
+    .right__header {
+        font-weight: 700;
+        font-style: normal;
+        font-size: 34px;
+        line-height: 55.78px;
+        color: #333333;
+        font-family: "monospace";
+    }
+
+    .sub__heading {
+        font-family: "monospace";
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        color: #4f4f4f;
+    }
+    footer{
+        position: static;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .sub-container {
+        flex-direction: column;
+    }
+
+    .letter-container{
+        height: 100%;
+    }
+
+    .error {
+        display: block;
+        margin: 0 auto;
+        top: 5px;
+        left: 35%;
+    }
+
+    .img-container {
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .button__container {
+        display: block;
+        margin: 0 auto;
+        margin-top: 32px;
+    }
+    
+}
